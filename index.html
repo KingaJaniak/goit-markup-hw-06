@@ -38,7 +38,38 @@
                     <svg width="8" height="8">
                     <use href="./images/modal-icons.svg#icon-close-black-18dp-2-1"></use>
                   </svg></button>
-                </div>
+                  <form action="#" name="user-form">
+                    <div class="form-wrapper">
+                    <h3>Leave your contacts and we will call you back</h3>
+                    <div class="field-wrapper">
+                    <label for="username">Name</label>
+                    <input type="text" name="username" id="username" class="wrapper-input"/>
+                        <svg class="icon-modal">
+                            <use href="./images/symbol-modal.svg#icon-person-black"></use>
+                        </svg></div>
+                    <div class="field-wrapper">
+                    <label for="phonenumber">Phone</label>
+                    <input type="tel" name="phonenumber" id="phonenumber"/>
+                    <svg class="icon-modal">
+                        <use href="./images/symbol-modal.svg#icon-phone-black"></use>
+                    </svg></div>
+                    <div class="field-wrapper">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <svg class="icon-modal">
+                        <use href="./images/symbol-modal.svg#icon-email-black"></use>
+                    </svg></div>
+                    <div class="field-wrapper">
+                    <label for="comment">Comment</label>
+                    <textarea name="comment" id="comment" rows="10" placeholder="Text input" ></textarea></div>
+                    <div class="field-wrapper">
+                    <input type="checkbox" name="useragree" value="useragree"/>
+                    <label for="useragree">I accept the terms and conditions of the <a href="#" class="modal-link">Privacy Policy</a></label>
+                    </div>
+                    </div>
+                    <button type="submit" class="btn-white">Send</button>
+                  </form>               
+                 </div>
             </div>
         </div>
         </section>
@@ -294,6 +325,14 @@
             </svg>
             </li>
         </ul>
+        </li>
+        <li class="newsletter-wrapper">
+        <h4 class="wrapper-title-socialmedia">Subscribe</h4>
+        <form action="#" name="newsletter">
+            <label for="newsletter"></label>
+            <input type="email" name="newsletter" id="newsletter" placeholder="E-mail" class="email-footer">
+            <button type="submit" class="btn-sub"><span>Subscribe</span><svg class="icon-newsletter"><use href="./images/symbol-modal.svg#icon-Frame"></use></svg></button>
+        </form>
         </li>
         </ul>
         </div>
