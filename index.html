@@ -63,10 +63,11 @@
                     <div class="field-wrapper">
                     <textarea name="comment" id="comment" rows="10" placeholder="Text input" ></textarea></div>
                     <div class="field-wrapper">
-                    <input type="checkbox" name="useragree" value="useragree"/>
-                    <label for="useragree">I accept the terms and conditions of the <a href="#" class="modal-link">Privacy Policy</a></label>
+                    <input type="checkbox" name="useragree" value="useragree" class="check-input hidden" required/>
+                    <span class="check-svg"><svg class="check-icons" width="10" height="8">
+                        <use href="./images/symbol-modal#icon-Check"></use></svg></span><label for="useragree">I accept the terms and conditions of the <a href="#" class="modal-link">Privacy Policy</a></label>
                     </div>
-                    <button type="submit" class="btn-white">Send</button>
+                    <button type="submit" class="btn-send">Send</button>
                   </form>
                   </div>               
                  </div>
@@ -331,7 +332,7 @@
         <form action="#" name="newsletter">
             <label for="newsletter"></label>
             <input type="email" name="newsletter" id="newsletter" placeholder="E-mail" class="email-footer">
-            <button type="submit" class="btn-sub">Subscribe<svg class="icon-newsletter"><use href="./images/symbol-modal.svg#icon-Frame"></use></svg></button>
+            <button type="submit" class="btn-subscribe">Subscribe<svg class="icon-newsletter"><use href="./images/symbol-modal.svg#icon-Frame"></use></svg></button>
         </form>
         </li>
         </ul>
