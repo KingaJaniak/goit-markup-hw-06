@@ -6,6 +6,7 @@
     --section-heading-color:#2e2f42;
     --light-mode-color:#F4F4FD;
     --light-accent-color:#E7E9FC;
+    --lightslate-color:#8E8F99;
     --time-effects: 250ms;
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -42,8 +43,17 @@ line-height: 1.5;
 letter-spacing: 0.32px;
 margin-top: 0;
 text-align: center;
-align-items: center;
-
+margin-bottom: 16px;
+}
+.label-form{
+    color:var(--lightslate-color);
+    font-size: 12px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-bottom: 6px;
 }
 .wrapper-title-socialmedia{
     justify-content: left;}
@@ -599,6 +609,9 @@ padding: 8px;
    .close-button:active {
     background-color: var(--pressed-state-color);
     fill: #fff;  
+    background-color: var(--pressed-state-color);
+    transition-duration: var(--time-effects);
+    transition-timing-function: var(--timing-function);
   }
   
   .is-hidden {
@@ -606,49 +619,50 @@ padding: 8px;
     pointer-events: none;
     opacity: 0;
  }
- .form-title{
-color: var(--section-heading-color);
-font-weight: 500;
-text-align: center;
-margin-block-start: 0;
-margin-block-end: 0;
-justify-content: center;
 
- }
  .form-wrapper{
     position:relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    margin-top: 72px;
     width: 100%;
+    align-items: center;
+    margin-top: 72px;
 }
 .modal-link{
     color:var(--primary-brand-color);
     text-decoration: underline;}
 
-textarea{    border: 2px solid #8E8F99;
+textarea{    border: 1px solid #8E8F99;
 	border-radius: 4px;
 	padding: 8px;
     width:100%;
-    height:40px;}
+    height:120px;
+resize:none;}
 
-.wrapper-input input {
-    border: 2px solid #8E8F99;
-	border-radius: 4px;
-	padding: 8px;
-    width:100%;
+.wrapper-input{
+	padding: 11px 38px;
     height:40px;
-    position:relative;
-    width:100%;
-    margin-top: 4px;
-    margin-bottom: 4px;
-	}
-.field-wrapper input:hover,
-.field-wrapper input:focus,
-.field-wrapper input input:active{border: 2px solid var(--primary-brand-color);
+    width: 100%;
+    border:1px solid #8E8F99;
+	border-radius: 4px;	}
+
+.icons-input-border:hover,
+.icons-input-border:focus,
+.icons-input-border:focus-within{
+    fill:var(--primary-brand-color);
+}
+
+.wrapper-input:hover,
+.wrapper-input:focus,
+.wrapper-input:focus-within,
+textarea:hover,
+textarea:focus,
+textarea:focus-within
+{    border: 1px solid var(--primary-brand-color);
     border-radius: 4px;
+    fill:var(--primary-brand-color);
 }
 
 textarea::placeholder{    color: #8E8F99;
@@ -660,25 +674,13 @@ textarea::placeholder{    color: #8E8F99;
     letter-spacing: 0.48px;
 }
 
-textarea:hover,
-textarea:focus,
-textarea:active{border: 2px solid var(--primary-brand-color);
-    border-radius: 4px;
-}
-.field-wrapper input{
-    outline:none;
-    display: flex;
-    width: 100%;
-    margin-bottom: 4px;
-    margin-top: 4px;
+.field-wrapper{
+    position:relative;
 }
 .icon-modal{
-    width:18px;
-    height:24px;
     position:absolute;
     left:16px;
-    top:50%;
-    translate: 0 -50% 0;
+    top:11px;
 }
 .wrapper-newsletter-footer{    display: flex;
     color: var(--background);
@@ -691,18 +693,13 @@ margin-top: 0;}
 
 .icon-newsletter{
     fill: #fff;
+    flex-shrink: 0;
     width: 24px;
     height: 24px;
-    flex-shrink: 0;
-    align-items: baseline;
 }
 .newsletter-wrapper > form:not(label){display:flex;
 flex-direction: row; }
 
-.wrapper-sub{
-    padding:8px 16px 8px 24px;
-    margin-top: 0;
-}
 .email-footer{
     width: 264px;
         height: 40px;
@@ -713,8 +710,10 @@ flex-direction: row; }
         color: #fff;
         padding-left: 16px;
 }
-.btn-sub{color:#FFFFFF;
-    width: 165px;
+.btn-sub{
+    display: flex;
+    color:#FFFFFF;
+    width: auto;
     font-weight: 500;
     font-family: "roboto";
     font-size:16px;
@@ -727,6 +726,16 @@ flex-direction: row; }
     text-align:center;
     line-height: 1.5;
     margin-top: 0;
+    padding: 8px 24px;
+    gap:16px;
 }
+
+.btn-sub:hover,
+.btn-sub:focus{background-color:var(--pressed-state-color);
+    border: var(--pressed-state-color);
+    box-shadow: 0px 4px 4px 0px #00000026;
+    transition-duration: var(--time-effects);
+    transition-timing-function: var(--timing-function);
+    }
 
 ::placeholder{color: #fff;}
