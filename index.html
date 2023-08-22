@@ -62,11 +62,21 @@
                     <label for="comment" class="label-form">Comment</label>
                     <div class="field-wrapper">
                     <textarea name="comment" id="comment" rows="10" placeholder="Text input" ></textarea></div>
-                    <div class="field-wrapper">
-                    <input type="checkbox" name="useragree" value="useragree" class="check-input hidden" required/>
-                    <span class="check-svg"><svg class="check-icons" width="10" height="8">
-                        <use href="./images/symbol-modal#icon-Check"></use></svg></span><label for="useragree">I accept the terms and conditions of the <a href="#" class="modal-link">Privacy Policy</a></label>
+
+
+
+                    <div class="checkbox-wrapper">
+                    <label for="useragree">
+                    <input type="checkbox" name="useragree" id="useragree" class="checkbox" required/>
+                    <div class="fake-checkbox">
+                     <svg width="10px" height="10px">
+                        <use href="./images/symbol-modal.svg#icon-Check"></use>
+                    </svg>
                     </div>
+                        I accept the terms and conditions of the <a href="#" class="modal-link">Privacy Policy</a></label>
+                    </div>
+
+
                     <button type="submit" class="btn-send">Send</button>
                   </form>
                   </div>               
