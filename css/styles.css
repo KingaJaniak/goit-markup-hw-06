@@ -691,14 +691,7 @@ textarea::placeholder{    color: #8E8F99;
     left:16px;
     top:11px;
 }
-.check-icon{
-    fill: #fff;
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
- 
+
   .accept-wrapper label {
     display: flex;
     align-items: center;
@@ -709,10 +702,10 @@ textarea::placeholder{    color: #8E8F99;
     justify-content: center;
     width: 16px;
     height: 16px;
-    fill: none;
     border-radius: 4px;
     border: 1px solid var(--lightslate-color);
     margin-right: 8px;
+    fill: #fff;
   }
   .checkbox:checked + .checkbox-icon {
     fill: #fff;
